@@ -27,9 +27,6 @@
             <section id="category" class="flex flex-col gap-4 px-4">
                 <div class="flex items-center justify-between">
                     <h2 class="font-bold leading-[20px]">Kategori</h2>
-                    <a href="category.html" class="rounded-full p-[6px_14px] border border-[#2A2A2A] text-xs leading-[18px]">
-                        View All
-                    </a>
                 </div>
                 <div class="grid grid-cols-2 gap-4">
 
@@ -53,10 +50,7 @@
             </section>
             <section id="featured" class="flex flex-col gap-4">
                 <div class="flex items-center justify-between px-4">
-                    <h2 class="font-bold leading-[20px]">Jelajahi <br>Jajanan</h2>
-                    <a href="#" class="rounded-full p-[6px_14px] border border-[#2A2A2A] text-xs leading-[18px]">
-                        View All
-                    </a>
+                    <h2 class="font-bold leading-[20px]">Jajanan</h2>
                 </div>
                 <div class="swiper w-full overflow-hidden">
                     <div class="swiper-wrapper">
@@ -93,15 +87,12 @@
             </section>
             <section id="fresh" class="flex flex-col gap-4 px-4">
                 <div class="flex items-center justify-between">
-                    <h2 class="font-bold leading-[20px]">Jajanan <br>Terbaru</h2>
-                    <a href="#" class="rounded-full p-[6px_14px] border border-[#2A2A2A] text-xs leading-[18px]">
-                        View All
-                    </a>
+                    <h2 class="font-bold leading-[20px]">Terbaru</h2>
                 </div>
                 <div class="flex flex-col gap-4">
 
                     @forelse ($newFood as $itemNewFood)
-                    <a href="{{ route('front.details', $itemPopularFood->slug) }}">
+                    <a href="{{ route('front.details', $itemNewFood->slug) }}">
                         <div class="flex items-center rounded-3xl p-[10px_16px_16px_10px] gap-[14px] bg-white transition-all duration-300 hover:ring-2 hover:ring-[#FFC700]">
                             <div class="w-20 h-20 flex shrink-0 rounded-2xl bg-[#D9D9D9] overflow-hidden">
                                 <img src="{{ Storage::url($itemNewFood->thumbnail) }}" class="w-full h-full object-cover" alt="thumbnail">
@@ -131,7 +122,11 @@
                     <div class="grid grid-flow-col auto-cols-auto items-center justify-between rounded-full bg-[#2A2A2A] p-2 px-[30px]">
                         <a href="index.html" class="active flex shrink-0 -mx-[22px]">
                             <div class="flex items-center rounded-full gap-[10px] p-[12px_16px] bg-[#C5F277]">
-                                <img src="{{asset ('assets/images/icons/3dcube-white.svg')}}" class="w-6 h-6" alt="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                                    <path
+                                      d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"
+                                    ></path>
+                                  </svg>
                                 <span class="font-bold text-sm leading-[21px]">Menu</span>
                             </div>
                         </a>
@@ -139,7 +134,7 @@
                             <img src="{{asset ('assets/images/icons/bag-2-white.svg')}}" class="w-6 h-6" alt="icon">
                         </a>
                         <a href="{{ route('front.viewAll') }}" class="mx-auto w-full">
-                            <img src="{{asset ('assets/images/icons/star-white.svg')}}" class="w-6 h-6" alt="icon">
+                            <img src="{{asset ('assets/images/icons/cari.png')}}" class="w-6 h-6" alt="icon">
                         </a>
                         <a href="{{ url('admin/login') }}" class="mx-auto w-full">
                             <img src="{{asset ('assets/images/icons/admin.png')}}" class="w-6 h-6" alt="icon">
