@@ -12,7 +12,7 @@
                 <a href="{{ route('front.index') }}">
                     <img src="assets/images/icons/back.svg" class="w-10 h-10" alt="icon">
                 </a>
-                <p class="font-bold text-lg leading-[27px]">Jajanan</p>
+                <p class="font-bold text-lg leading-[27px]">Populer</p>
                 <div class="dummy-btn w-10"></div>
             </div>
             {{-- <div class="px-4">
@@ -28,7 +28,7 @@
             </div> --}}
             <section id="fresh" class="flex flex-col gap-4 px-4 mb-[111px]">
                 <div class="flex items-center justify-between">
-                    <h2 class="font-bold leading-[20px]">Lihat semua jajanan</h2>
+                    <h2 class="font-bold leading-[20px]">jajanan Terpopuler</h2>
                 </div>
                 <div class="flex flex-col gap-4">
 
@@ -68,7 +68,7 @@
                         <a href="{{ route('front.viewAll') }}" class="active flex shrink-0 -mx-[22px]">
                             <div class="flex items-center rounded-full gap-[10px] p-[12px_16px] bg-[#C5F277]">
                                 <img src="{{ asset('assets/images/icons/bag-2.svg') }}" class="w-6 h-6" alt="icon">
-                                <span class="font-bold text-sm leading-[21px]">Jajanan</span>
+                                <span class="font-bold text-sm leading-[21px]">Populer</span>
                             </div>
                         </a>
                         <a href="{{ url('admin/login') }}" class="mx-auto w-full">

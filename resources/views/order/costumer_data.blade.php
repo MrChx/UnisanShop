@@ -43,7 +43,7 @@
                         <label for="phone" class="font-semibold">NIM</label>
                         <div class="flex items-center w-full rounded-full ring-1 ring-[#090917] px-[14px] gap-[10px] overflow-hidden transition-all duration-300 focus-within:ring-2 focus-within:ring-[#FFC700]">
                             <img src="{{asset('assets/images/icons/admin2.png')}}" class="w-6 h-6 flex shrink-0" alt="icon">
-                            <input type="tel" name="nim" id="phone" class="appearance-none outline-none w-full font-semibold placeholder:font-normal placeholder:text-[#878785] py-[14px]" placeholder="Masukan nim">
+                            <input type="text" name="nim" id="phone" class="appearance-none outline-none w-full font-semibold placeholder:font-normal placeholder:text-[#878785] py-[14px]" placeholder="Masukan nim">
                         </div>
                     </div>
                     <div class="flex flex-col gap-2">

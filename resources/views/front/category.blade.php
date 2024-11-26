@@ -12,7 +12,7 @@
                 <a href="{{ route('front.index') }}">
                     <img src="{{ asset('assets/images/icons/back.svg') }}" class="w-10 h-10" alt="icon">
                 </a>
-                <p class="font-bold text-lg leading-[27px]">Category</p>
+                <p class="font-bold text-lg leading-[27px]">Kategori</p>
                 <div class="dummy-btn w-10"></div>
             </div>
             <div class="px-4">
@@ -28,10 +28,7 @@
             </div>
             <section id="fresh" class="flex flex-col gap-4 px-4 mb-[111px]">
                 <div class="flex items-center justify-between">
-                    <h2 class="font-bold leading-[20px]">Fresh From <br>Great Designers</h2>
-                    <a href="#" class="rounded-full p-[6px_14px] border border-[#2A2A2A] text-xs leading-[18px]">
-                        View All
-                    </a>
+                    <h2 class="font-bold leading-[20px]">Berikut {{ $category->name }} <br>Yang Tersedia</h2>
                 </div>
                 <div class="flex flex-col gap-4">
 

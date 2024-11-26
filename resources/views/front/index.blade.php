@@ -50,7 +50,7 @@
             </section>
             <section id="featured" class="flex flex-col gap-4">
                 <div class="flex items-center justify-between px-4">
-                    <h2 class="font-bold leading-[20px]">Jajanan</h2>
+                    <h2 class="font-bold leading-[20px]">Populer</h2>
                 </div>
                 <div class="swiper w-full overflow-hidden">
                     <div class="swiper-wrapper">
